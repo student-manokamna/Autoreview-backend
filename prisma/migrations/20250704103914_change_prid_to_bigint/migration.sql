@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "PullRequest" ALTER COLUMN "prId" SET DATA TYPE BIGINT;

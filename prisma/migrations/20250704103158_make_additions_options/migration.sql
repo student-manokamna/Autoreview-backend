@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE "PullRequest" ALTER COLUMN "baseBranch" DROP NOT NULL,
+ALTER COLUMN "headBranch" DROP NOT NULL,
+ALTER COLUMN "url" DROP NOT NULL;
