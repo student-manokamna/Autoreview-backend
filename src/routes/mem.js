@@ -100,10 +100,32 @@ Please provide a structured code review:
       },
     });
 
-    res.json({ result: aiOutput });
+  res.json({
+  summary: aiOutput,      // ✅ AI-generated summary
+  diffText: diffText      // ✅ Git diff text
+});
+
   } catch (error) {
     console.error("Error in /api/analyze:", error);
     res.status(500).json({ error: error.message });
+  }
+});
+memRouter.get('/api/summary/:prId', async (req, res) => {
+  try {
+    const prId = BigInt(req.params.prId);
+
+    const pr = await prisma.pullRequest.findUnique({
+      where: { prId },
+    });
+
+    if (!pr) {
+      return res.status(404).json({ error: 'PR not found' });
+    }
+
+    res.json({ summary: pr.summary || "No summary found." });
+  } catch (error) {
+    console.error('Error fetching PR summary:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
   }
 });
 
