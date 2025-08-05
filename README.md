@@ -44,9 +44,12 @@ With smart prompt-handling and modular Express.js endpoints, you can integrate o
 
 (Feel free to expand this table with more routes you add!)
 
+---
 
-🌟 Fun Fact
-Gemini helped process 20+ PRs already, saving 60% of manual code review time. That’s enough time to grab coffee ☕ and fix another bug! 😉
+## 🌟 Fun Fact
+
+Gemini helped process **20+ PRs**, saving **60%** of manual code review time.  
+That’s enough time to grab coffee ☕ *and* fix another bug! 😂
 
 ---
 
@@ -57,7 +60,10 @@ git clone https://github.com/student-manokamna/AutoReviewAI-backend.git
 cd AutoReviewAI-backend
 npm install
 npm run dev
+```
+
 ---
+
 ## 🤝 Contributions
 
 This is a solo-built **backend** engine crafted for AutoReview AI.  
@@ -74,5 +80,3 @@ Created with ❤️ by **MANOKAMNA**
 ---
 
 > 🧠 *Crafted to automate the boring parts of code review — so you can focus on building magic.* ✨
-
-
