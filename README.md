@@ -57,4 +57,22 @@ git clone https://github.com/student-manokamna/AutoReviewAI-backend.git
 cd AutoReviewAI-backend
 npm install
 npm run dev
+---
+## 🤝 Contributions
+
+This is a solo-built **backend** engine crafted for AutoReview AI.  
+No PRs are open yet — but feel free to explore, fork, and remix the logic! 🧪⚙️
+
+---
+
+## 📬 Contact
+
+Created with ❤️ by **MANOKAMNA**  
+📧 Email: aroramoney473@gmail.com  
+🌐 GitHub: [@student-manokamna](https://github.com/student-manokamna)
+
+---
+
+> 🧠 *Crafted to automate the boring parts of code review — so you can focus on building magic.* ✨
+
 
