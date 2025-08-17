@@ -1,10 +1,11 @@
+//mem.js
 const express = require('express');
 const { OpenAI } = require('openai');
 const prisma = require('../lib/prisma');
 const memRouter = express.Router();
 require("dotenv").config();
 
-const openaiApiKey = process.env.GEMINI_API_KEY || "AIzaSyBHVwiEBgMPt1PU-iHXDDXn1dgQgmhDwmI"; // Recommended: move to .env
+const openaiApiKey = process.env.GEMINI_API_KEY || "AIzaSyBerG-JFLmKqEBQ37gp8IBp7Z6Uz3OHpwc"; // Recommended: move to .env
 const geminiBaseUrl = "https://generativelanguage.googleapis.com/v1beta/openai/";
 
 const openaiClient = new OpenAI({
